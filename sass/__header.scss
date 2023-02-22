@@ -1,0 +1,149 @@
+.header {
+    height: 519px;
+    max-width: 100%;
+    @include backgroundImage(url("./../images/banner.png"), no-repeat, cover, center);
+
+    &__container {
+        background: rgba(255, 255, 255, 0.65);
+        box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.25);
+        position: fixed;
+        top: 0%;
+        left: 0;
+        right: 0;
+        transition: top 0.5s linear;
+        z-index: 10;
+    }
+
+    .logo {
+        &__name {
+            font-weight: 700;
+            font-size: 20px;
+        }
+
+        &__image {
+            @include size(61px, 61px);
+        }
+    }
+
+    .nav {
+        padding: 30px 0;
+        @include flex(center, space-between, "");
+
+        &__logo {
+            @include flex(center, space-between, "");
+            gap: 33px;
+
+            &--group {
+                @include flex(center, "", "");
+            }
+        }
+
+        &__search {
+            @include size(374px, 45px);
+            position: relative;
+
+            input {
+                @include size(100%, 19px);
+                border: 1px solid #d4d4d4;
+                border-radius: 4px;
+                padding: 11px 50px 13px 20px;
+                font-size: 15px;
+                font-weight: 500;
+                line-height: 22px;
+            }
+
+            &--icon {
+                position: absolute;
+                right: 0;
+                top: 50%;
+                bottom: 50%;
+                transform: translate(-50%, -50%);
+                color: #d4d4d4;
+                cursor: pointer;
+                @include size(19px, 19px)
+            }
+        }
+
+        &__option {
+            @include flex(center, space-between, "");
+            width: 350px;
+
+            &--btn {
+                @include flex(center, space-between, "");
+                gap: 20px;
+
+                &-top {
+                    color: #fff;
+                    font-size: 15px;
+                    font-weight: 500;
+                    padding: 4px 11px;
+                    background-color: #c40000;
+                    border-radius: 4px;
+                }
+
+                &-create {
+                    font: 15px;
+                    width: 500px;
+                }
+            }
+
+            &--user {
+                @include flex(center, space-between, "");
+                grid-template: 10px;
+
+                &-name {
+                    font-weight: 500;
+                    font-size: 15px;
+                }
+
+                &-avatar {
+                    @include size(30px, 30px)
+                }
+            }
+        }
+    }
+}
+
+@keyframes backOutUp {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    20% {
+        transform: translateY(0px);
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: translateY(-700px);
+        opacity: 0.7;
+    }
+}
+
+.backOutUp {
+    animation-name: backOutUp;
+    animation-duration: 3s;
+}
+
+.backInDown {
+    animation-name: backInDown;
+    animation-duration: 1s;
+}
+
+@keyframes backInDown {
+    0% {
+        transform: translateY(-1200px);
+        opacity: 0.7;
+    }
+
+    80% {
+        transform: translateY(0px);
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

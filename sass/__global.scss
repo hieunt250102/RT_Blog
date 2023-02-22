@@ -1,0 +1,43 @@
+@import './_reset';
+@import url(//db.onlinewebfonts.com/c/d7a74f6ebe99f3f64ac5c9cb859c25f6?family=SVN-Gilroy);
+
+@font-face {
+    font-family: "SVN-Gilroy";
+    src: url("//db.onlinewebfonts.com/t/d7a74f6ebe99f3f64ac5c9cb859c25f6.eot");
+    src: url("//db.onlinewebfonts.com/t/d7a74f6ebe99f3f64ac5c9cb859c25f6.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/d7a74f6ebe99f3f64ac5c9cb859c25f6.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/d7a74f6ebe99f3f64ac5c9cb859c25f6.woff") format("woff"), url("//db.onlinewebfonts.com/t/d7a74f6ebe99f3f64ac5c9cb859c25f6.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/d7a74f6ebe99f3f64ac5c9cb859c25f6.svg#SVN-Gilroy") format("svg");
+}
+
+@mixin flex($align, $justify, $wrap) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+}
+
+@mixin size($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+@mixin backgroundImage($url, $repeat, $size, $position) {
+    background-image: $url;
+    background-repeat: $repeat;
+    background-size: $size;
+    background-position: $position;
+}
+
+body {
+    margin-top: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
