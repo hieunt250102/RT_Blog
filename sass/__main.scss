@@ -151,6 +151,7 @@
         height: 40px;
         text-decoration: none;
         position: relative;
+        font-weight: 700;
         font-family: "SVN-Gilroy";
 
         &:hover {
@@ -231,6 +232,7 @@
     }
 
     footer {
+        margin-top: 100px;  
         font-size: 15px;
     }
 }
@@ -317,5 +319,9 @@
                 padding: 7px 60px 7px 5px;
             }
         }
+    }
+
+    footer{
+        margin-top: 100px;
     }
 }
