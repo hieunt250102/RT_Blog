@@ -1,11 +1,31 @@
 @import './_reset';
-@import url(//db.onlinewebfonts.com/c/d7a74f6ebe99f3f64ac5c9cb859c25f6?family=SVN-Gilroy);
 
 @font-face {
     font-family: "SVN-Gilroy";
-    src: url("//db.onlinewebfonts.com/t/d7a74f6ebe99f3f64ac5c9cb859c25f6.eot");
-    src: url("//db.onlinewebfonts.com/t/d7a74f6ebe99f3f64ac5c9cb859c25f6.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/d7a74f6ebe99f3f64ac5c9cb859c25f6.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/d7a74f6ebe99f3f64ac5c9cb859c25f6.woff") format("woff"), url("//db.onlinewebfonts.com/t/d7a74f6ebe99f3f64ac5c9cb859c25f6.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/d7a74f6ebe99f3f64ac5c9cb859c25f6.svg#SVN-Gilroy") format("svg");
+    src: url("./../fonts/SVN-GilroyBold.eot");
+    src: url("./../fonts/SVN-GilroyBold.eot?#iefix") format("embedded-opentype"),
+        url("./../fonts/SVN-GilroyBold.woff2") format("woff2"),
+        url("./../fonts/SVN-GilroyBold.woff") format("woff"),
+        url("./../fonts/SVN-GilroyBold.ttf") format("truetype"),
+        url("./../fonts/SVN-GilroyBold.svg#SVN-GilroyBold") format("svg");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
+
+@font-face {
+    font-family: "SVN-Gilroy";
+    src: url("./../fonts/SVN-GilroyLight.eot");
+    src: url("./../fonts/SVN-GilroyLight.eot?#iefix") format("embedded-opentype"),
+        url("./../fonts/SVN-GilroyLight.woff2") format("woff2"),
+        url("./../fonts/SVN-GilroyLight.woff") format("woff"),
+        url("./../fonts/SVN-GilroyLight.ttf") format("truetype"),
+        url("./../fonts/SVN-GilroyLight.svg#SVN-GilroyLight") format("svg");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 @mixin flex($align, $justify, $wrap) {
     display: flex;

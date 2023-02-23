@@ -88,6 +88,8 @@
             }
 
             &--summary {
+                font-family: "SVN-Gilroy";
+                font-style: normal;
                 font-size: 17px;
                 margin-bottom: 29px;
                 display: -webkit-box;
@@ -104,21 +106,16 @@
             }
 
             &--btn {
-                @include flex(center, space-evenly, "");
-                flex-wrap: "";
-                width: 137px;
-                height: 40px;
+                display: flex;
                 background: #FFFFFF;
                 border: 1px solid #E4E4E4;
                 border-radius: 4px;
                 color: rgb(196, 0, 0);
                 font-size: 14px;
                 font-weight: 400;
-                line-height: 20px;
-                letter-spacing: 0em;
-                text-align: left;
-                padding: 10px 5px 10px 5px;
                 cursor: pointer;
+                padding: 10px;
+                gap: 10px;
 
                 svg {
                     display: block;
