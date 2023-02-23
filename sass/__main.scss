@@ -190,11 +190,11 @@
         height: 385px;
         background-image: url("./../images/banner_res.png");
 
-        .nav {
-            display: none;
+        &-nav {
+            display: none !important;
         }
 
-        &__mobile {
+        &-menu {
             display: block;
         }
     }
@@ -304,19 +304,19 @@
         }
     }
 
-    .content{
-        &__grid{
-            grid-template-columns: repeat(2,1fr);
+    .content {
+        &__grid {
+            grid-template-columns: repeat(2, 1fr);
             row-gap: 30px;
             gap: 20px;
         }
 
-        &__header{
-            h1{
+        &__header {
+            h1 {
                 font-size: 30px;
             }
 
-            select{
+            select {
                 padding: 7px 60px 7px 5px;
             }
         }
