@@ -3,11 +3,11 @@
         height: 385px;
         background-image: url("./../images/banner_res.png");
 
-        .nav {
+        &-nav {
             display: none;
         }
 
-        &__mobile {
+        &-menu {
             display: block;
         }
     }
