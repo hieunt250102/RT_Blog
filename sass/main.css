@@ -144,8 +144,8 @@ body {
   color: #fff;
   font-size: 15px;
   font-weight: 500;
-  padding: 4px 11px;
-  background-color: rgb(119, 3, 3);
+  padding: 5px 12px;
+  background-color: #770303;
   border-radius: 4px;
 }
 .header .nav__option--btn-create {
@@ -409,6 +409,8 @@ footer {
   flex-wrap: "";
 }
 .content .post__content--author {
+  font-family: "SVN-Gilroy";
+  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   color: #211E3B;
@@ -455,7 +457,7 @@ footer {
   font-size: 14px;
   font-weight: 400;
   cursor: pointer;
-  padding: 10px;
+  padding: 12px 10px 10px 10px;
   gap: 10px;
 }
 .content .post__content--btn svg {
@@ -528,7 +530,7 @@ footer {
   }
   .content__grid {
     grid-template-columns: repeat(1, 1fr);
-    row-gap: 30px;
+    row-gap: 70px;
     column-gap: 0;
   }
   .content__header--title h1 {
@@ -601,7 +603,7 @@ footer {
   }
   .content__grid {
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 30px;
+    row-gap: 70px;
     gap: 20px;
   }
   .content__header h1 {

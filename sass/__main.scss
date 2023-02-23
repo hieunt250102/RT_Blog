@@ -64,6 +64,8 @@
             }
 
             &--author {
+                font-family: "SVN-Gilroy";
+                font-style: normal;
                 font-weight: 400;
                 font-size: 18px;
                 color: #211E3B;
@@ -114,7 +116,7 @@
                 font-size: 14px;
                 font-weight: 400;
                 cursor: pointer;
-                padding: 10px;
+                padding:12px 10px 10px 10px;
                 gap: 10px;
 
                 svg {
@@ -200,7 +202,7 @@
     .content {
         &__grid {
             grid-template-columns: repeat(1, 1fr);
-            row-gap: 30px;
+            row-gap: 70px;
             column-gap: 0;
         }
 
@@ -306,7 +308,7 @@
     .content {
         &__grid {
             grid-template-columns: repeat(2, 1fr);
-            row-gap: 30px;
+            row-gap: 70px;
             gap: 20px;
         }
 
