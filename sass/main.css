@@ -516,7 +516,7 @@ footer {
     background-image: url("./../images/banner_res.png");
   }
   .header-nav {
-    display: none !important;
+    display: none;
   }
   .header-menu {
     display: block;
