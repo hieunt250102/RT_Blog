@@ -1,0 +1,14 @@
+@media screen and (max-width: 769px) {
+    .header {
+        height: 385px;
+        background-image: url("./../images/banner_res.png");
+
+        &-nav {
+            display: none;
+        }
+
+        &-menu {
+            display: block;
+        }
+    }
+}

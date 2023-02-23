@@ -128,14 +128,14 @@ body {
   align-items: center;
   justify-content: space-between;
   flex-wrap: "";
-  gap: 20px;
+  gap: 27px;
 }
 .header .nav__option--btn-top {
   color: #fff;
   font-size: 15px;
   font-weight: 500;
   padding: 4px 11px;
-  background-color: #c40000;
+  background-color: rgb(119, 3, 3);
   border-radius: 4px;
 }
 .header .nav__option--btn-create {
@@ -147,7 +147,7 @@ body {
   align-items: center;
   justify-content: space-between;
   flex-wrap: "";
-  grid-template: 10px;
+  gap: 17px;
 }
 .header .nav__option--user-name {
   font-weight: 500;
@@ -156,6 +156,48 @@ body {
 .header .nav__option--user-avatar {
   height: 30px;
   width: 30px;
+}
+.header-menu {
+  display: none;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+}
+.header-menu-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: "";
+  padding: 9px 15px;
+}
+.header-menu-icon {
+  height: 25px;
+  width: 26px;
+  color: #292d32;
+}
+.header-menu-search {
+  height: 19px;
+  width: 19px;
+  color: #a7a7a7;
+}
+.header-menu-logoicon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: "";
+}
+.header-menu-imageicon {
+  height: 45px;
+  width: 47px;
+}
+.header-logo-namemenu {
+  font-weight: 700;
+  font-size: 20px;
+  color: #000;
 }
 
 @keyframes backOutUp {
@@ -196,6 +238,18 @@ body {
     opacity: 1;
   }
 }
+@media screen and (max-width: 769px) {
+  .header {
+    height: 385px;
+    background-image: url("./../images/banner_res.png");
+  }
+  .header-nav {
+    display: none;
+  }
+  .header-menu {
+    display: block;
+  }
+}
 footer {
   margin-top: 200px;
   text-align: center;
@@ -207,20 +261,19 @@ footer {
 .content__header {
   margin: 50px 0 38px;
   display: flex;
-  align-items: "";
+  align-items: center;
   justify-content: space-between;
   flex-wrap: "";
 }
-.content__header--title {
+.content__header--title h1 {
   color: #000;
   font-size: 50px;
   font-weight: 700;
   line-height: 72.4px;
 }
-.content__header--filter select {
-  padding: 7px 60px 7px 15px;
+.content__header select {
+  padding: 7px 60px 7px 5px;
   box-sizing: border-box;
-  position: absolute;
   width: 144px;
   height: 40px;
   background: #FFFFFF;
@@ -285,8 +338,6 @@ footer {
   font-style: normal;
 }
 .content .post__content--summary {
-  font-family: "SVN-Gilroy";
-  font-weight: 400;
   font-size: 17px;
   margin-bottom: 29px;
   display: -webkit-box;
@@ -374,6 +425,102 @@ footer {
 .pagination .page-active {
   background-color: rgb(255, 228, 228);
   color: rgb(196, 0, 0);
+}
+
+@media screen and (max-width: 769px) {
+  .header {
+    height: 385px;
+    background-image: url("./../images/banner_res.png");
+  }
+  .header .nav {
+    display: none;
+  }
+  .header__mobile {
+    display: block;
+  }
+  .content__grid {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 30px;
+    column-gap: 0;
+  }
+  .content__header--title h1 {
+    color: #000;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 72.4px;
+  }
+  .content__header select {
+    padding: 7px 60px 7px 5px;
+  }
+  .pagination {
+    flex-wrap: nowrap;
+  }
+  .pagination a,
+  .pagination span {
+    font-size: 15px;
+    margin: 0;
+    padding: 0 16px;
+  }
+  footer {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 920px) {
+  .header .logo__image {
+    width: 41px;
+    height: 41px;
+  }
+  .header .logo__name {
+    font-size: 15px;
+  }
+  .header .nav__search {
+    height: 45px;
+    width: 374px;
+    position: relative;
+  }
+  .header .nav__search input {
+    margin-top: 10px;
+    width: 70%;
+    height: 70%;
+    border: 1px solid #d4d4d4;
+    border-radius: 4px;
+    padding: 11px 50px 13px 20px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+  .header .nav__search--icon {
+    position: absolute;
+    left: 60%;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+    color: #d4d4d4;
+    cursor: pointer;
+    height: 19px;
+    width: 19px;
+  }
+  .header .nav__option--btn-top, .header .nav__option--btn-create {
+    font-size: 12px;
+  }
+  .header .nav__option--user-name {
+    font-size: 12px;
+  }
+  .header .nav__option--user-avatar {
+    height: 25px;
+    width: 25px;
+  }
+  .content__grid {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+    gap: 20px;
+  }
+  .content__header h1 {
+    font-size: 30px;
+  }
+  .content__header select {
+    padding: 7px 60px 7px 5px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
